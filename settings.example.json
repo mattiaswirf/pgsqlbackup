@@ -1,0 +1,19 @@
+{
+    "pgsql": {
+        "default_db": "postgres",
+        "host": "localhost",
+        "port": 5432,
+        "user": "postgres",
+        "password": "secret"
+    },
+    "pg_dump": {
+        "bin": "/usr/bin/pg_dump"
+    },
+    "backup_path": "/var/backups/postgresql",
+    "exclude": [
+        "template0", "template1"
+    ],
+    "log": {
+        "file": "/var/log/pgsqlbackup/pgsqlbackup.log"
+    }
+}
