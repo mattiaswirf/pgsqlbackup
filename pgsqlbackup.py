@@ -27,8 +27,7 @@ class PGSQLBackup(object):
         Initiate this class, set values and get
         settings from json file.
         """
-        self.current_dir = os.getcwd()
-        #self.current_dir = "/srv/tools/pgsqlbackup/"
+        self.current_dir = "/srv/tools/pgsqlbackup/"
         self.settings = self.get_settings()
         logging.basicConfig(filename=self.settings['log']['file'], level=logging.DEBUG)
         self.today = datetime.datetime.now().strftime("%Y-%m-%d")
